@@ -120,88 +120,29 @@ button:hover{
 }
 
 
-#projects .container .section-heading{
+.projects{
+    margin-top: 0rem;
     color: aliceblue;
-    font-size: 40px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    margin-left: 600px;
+
+}
+.container-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
-#projects{
-    background: #32314e;
-    padding: 10rem 0;
+.projects{
+    background: #0c0c22;
+    text-align: center; 
+    border: 1px solid transparent;
 }
 
-#projects .item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 15rem;
+.project_info{
+    padding: 2rem;
 }
 
-
-
-
-#projects .item .right{
-    flex: 1;
-    background-color: #572975;
-    padding: 5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px #000;
-    z-index: 2;
-}
-
-
-#projects .item .left .img{
-    height: 300px;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 0px 0px;
-}
-
-#projects .iten .left .img img{
-    object-fit:cover;
-    align-content: center;
-}
-
-#projects .item .right .project-title{
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans serif;
-    margin-bottom: 1rem;
-}
-
-#projects .item .right .project-sub-title{
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans serif;
-    margin-bottom: 1rem;
-}
-
-#projects .item .right .project-desc{
+.project_info{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
     color: aliceblue;
-    margin-bottom: 3rem;
-}
-
-#projects .item .right .buttons .primary-btn{
-    background-color: #32314e;
-    color: aliceblue;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: solid;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-#projects .item .right .buttons .primary-btnoutline{
-    background-color: #32314e;
-    color: aliceblue;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: solid;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
 }
