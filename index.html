@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>My personal portfolio</title>
-    <link rel="stylesheet" href = "styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-    <div class="top_page"> 
-        <h1>This is my profesional portfolio</h1>
-      <div class="home_bar">
-<center></center>
-        <center>
-        <a href="">Home</a>
-        
-        <a href="">TitleCard</a>
-        
-        <a href="">Proyects</a>
-        
-        <a href="">Contact</a>
-        </>
-      </div>
-        <div class="nav_bar">
-        <i class="fa-solid fa-bars"></i></div>
-        <div class="Proyect1">
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" alt="logo">
+            <ul id="menu">
+                <li>Home</li>
+                <li>About me</li>
+                <li>Projects</li>
+                <li>Social Media</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </div>
+    <section id="about">
+        <div class="main">
+            <img src="/images/f_about.jpeg" alt="perfil">
+            <div class="about_text">
+                <h2>About me</h2>
+                <h5>AI engineering student <span>& Data Science student</span></h5>
+                <p>I am a student of AI and data science. Enthusiastic about technology, and interested in development.
 
-    <div class="nav_bar">
-        <i class="fa-solid fa-bars"></i></div>
-    <div class="Proyect1">
+                 In this website you will find my developments, and projects carried out during my professional career.</p>
+                 <a href="https://wa.me/5547975530"><button type="button">Contact me!!</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-heading" 
+            data-outline="Projects">Projects</h2>
+            <div class="item">
+                <div class="left">
+                    <div class="img"><img src="images/mc.jpeg" alt="mc"></div>
+                    <div class="right">
+                        <h2 class="project-title">Minecraft2D</h2>
+                        <h3 class="project-sub-title">jejeej</h3>
+                        <p class="project-desc">
+                            This project is a 2D minecraft replica.
+                            C++ technology was used for the entire development of this.</p>
+                        <div class="buttons">
+                            <a href="" class="primary-btn">Know More</a>
+                            <a href="" class="primary-btnoutline">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="img"><img src="images/mc.jpeg" alt="mc"></div>
+                    <div class="right">
+                        <h2 class="project-title">Minecraft2D</h2>
+                        <h3 class="project-sub-title">The real trap my nigga</h3>
+                        <p class="project-desc">
+                            This project is a 2D minecraft replica.
+                            C++ technology was used for the entire development of this.</p>
+                        <div class="buttons">
+                            <a href="" class="primary-btn">Know More</a>
+                            <a href="" class="primary-btnoutline">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>This is a 2D minecraft proyect</h3>
-        <p>In this proyect implement the tecnologies c++ and others</p>
-        <img src="https://via.placeholder.com/260">
-    </div>
 
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
