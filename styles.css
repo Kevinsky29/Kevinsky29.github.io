@@ -139,10 +139,10 @@ button:hover{
 }
 .container-projects{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .project{
